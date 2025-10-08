@@ -1,0 +1,159 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+
+.container {
+    display: inline-grid;
+    grid-template: 99.9vh 0px 0px 0px 0px / 250px 250px 800px 125px 0px;
+    grid-template-areas:
+    "sx sx dx dx dx"
+    "sx sx dx dx dx"
+    "sx sx dx dx dx"
+    "sx sx dx dx dx"
+}
+
+#sx {
+    grid-area: sx;
+    /*background-color: red;*/
+    background-image: url(https://picsum.photos/900);
+}
+#dx {
+    grid-area: dx;
+    background-color: rgba(115, 113, 240, 0.07);
+}
+
+
+
+#banner{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 500px;
+    height: 130px;
+    position: absolute;
+    top: 200px;
+}
+
+
+.img-logo{
+    position: absolute;
+    left: 120px;
+    margin-top: 10px;
+    width: 80px;
+}
+
+.title {
+    color: white;
+    font-family: impact, sans-serif;
+    font-size: 4rem;
+    margin-top: 25px;
+    margin-left: 215px;
+}
+
+.container-form {
+
+    margin-top: 150px;
+}
+
+.container-form h2 {
+    font-size: 17px;
+    margin-right: 240px;
+    margin-left: 30px;
+}
+.over-form{
+    width: 90%;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-bottom: 1px solid rgba(115, 113, 113, 0.47);
+    box-shadow: 5px 5px 12px rgba(115, 113, 113, 0.47);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+    padding: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.field input {
+    height: 25px;
+    width: 75% !important;
+    border: 1px solid rgba(115, 113, 113, 0.47);
+    border-radius: 4px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+
+.field input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #e11;
+}
+
+
+.field label {
+    color: rgba(115, 113, 113, 1);
+    font-size: 12px;
+    text-transform: uppercase;   /* rende il testo maiuscolo */
+    letter-spacing: 0.12em;      /* distanza tra lettere */
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.top-text {
+    color: rgb(115, 113, 113);
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+.top-text span {
+    position: absolute;
+    margin-top: 15px;
+    font-weight: 800;
+}
+
+.top-second-text{
+    margin-top: 20px;
+    font-style: italic;
+
+}
+
+.footersx{
+    padding: 20px;
+    padding-left: 40px; /*Margin left*/
+}
+.footer-btn{
+     background-color: #596D48;
+     border: 1px solid #596D48;
+     border-radius: 6px;
+     color: white;
+     height: 40px;
+     font-size: 14px;
+     width: 200px;
+     font-family: sans-serif;
+     padding: 10px 16px;
+     cursor: pointer;
+
+}
+.footer-text{
+    font-family: sans-serif;
+    margin-top: 30px;
+
+}
+.footer-link{
+    color: #596D48;
+    font-family: sans-serif;
+    text-decoration: none;
+}
