@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.layout{
+  display: grid;
+  min-height: 100vh;
+
+  grid-template-columns: 280px 0px 1fr 0px 400px;
+
+  grid-template-rows: 80px 60px 1fr auto auto;
+  grid-template-areas:
+    "aside aside header header header"
+    "aside aside header header header"
+    "aside aside content content content"
+    "aside aside content content content"
+    "aside aside content content content";
+
+  gap: 0;
+}
+
+.aside{
+  grid-area: aside;
+  background: rgb(0,96,146);
+  padding: 20px;
+}
+
+.content{
+  grid-area: content;
+  background: rgb(221,228,237);
+}
+
+.header{
+  grid-area: header;
+  background: white;
+  display: inline-flex;
+}
+
+.aside-title{
+    color: white;
+    margin-bottom: 80px;
+    margin-left: 30px;
+}
+
+.aside-page {
+    color: white;
+    list-style: none;
+    font-size: 23px;
+    margin-top: 20px;
+}
+.icon {}
